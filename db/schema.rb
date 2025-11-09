@@ -10,5 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 0) do
+ActiveRecord::Schema[8.1].define(version: 2025_11_09_155219) do
+  create_table "boulders", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "grade"
+    t.datetime "updated_at", null: false
+  end
 end
